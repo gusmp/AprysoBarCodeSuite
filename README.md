@@ -27,4 +27,4 @@ A continuación:
 3. En el back office pulsar sobre el botón con el símbolo de Android. En ésta página se detallan los pasos para configurar el terminal y la instalación de la app
 
 
-![Botón Android](https://github.com/gusmp/AprysoBarCodeSuite "Botón Android")
+![Botón Android](https://raw.githubusercontent.com/gusmp/AprysoBarCodeSuite/master/android_button.png "Botón Android")
