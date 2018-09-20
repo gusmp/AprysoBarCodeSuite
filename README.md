@@ -5,7 +5,7 @@ En este repositorio se encuentran los proyectos que engloban la Apryso BarCode S
 
 ## Instalación de la parte servidora (Apryso BarCode Server)
 
-1. Descargar [este archivo](https://github.com/gusmp/AprysoBarCodeSuite/dist/aprysobarcodesuite.exe)
+1. Descargar [este archivo](https://raw.githubusercontent.com/gusmp/AprysoBarCodeSuite/master/dist/aprysobarcodesuite.exe)
 2. Ejecutar para descomprimir el archivo
 3. Una vez descomprimido ejecutar el archivo *startApryso.bat*
 4. Arrancar el navegador y acceder a la url *localhost:8081/aprysobarcodeserver/*
