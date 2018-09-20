@@ -1,0 +1,149 @@
+<html class="background" >
+    <head>
+        <link rel="stylesheet" href="../resources/js/webix/skins/air.css" type="text/css" charset="utf-8">
+		<script src="../resources/js/webix/webix.js" type="text/javascript" charset="utf-8"></script>
+		
+		<style>
+			.background { background-color: #AEDCF7 }
+			.textAreaNoBorder { border: none  }
+		</style>
+		
+    </head>
+    <body>
+    
+    	<p style="text-align:center; font-size:25px; font-family:'verdana';">
+    		<strong>
+    		<em>
+    			Apryso BarCode Reader (versión Android)
+    		</em>
+    		</strong>
+    	</p>
+    	
+    	<div id="data_container" style="margin:auto"></div>
+    	
+		<script type="text/javascript" charset="utf-8">
+		webix.ui({
+			type:"space",
+		  	padding:8,
+		  	container:"data_container",
+		  	rows:[
+		    	{
+		      		type:"clean",
+		      		rows:[
+		        		{
+		          			view:"tabbar", 
+		          			id:'tabbar',
+		          			selected: 'paso1', 
+		          			multiview:true, 
+		          			inputWidth:300,
+		          			options:[
+		            			{ value:'Paso 1: Configuración', id:'paso1'},
+		            			{ value:'Paso 2: Instalación', id:'paso2'}
+		          			]
+		        		},
+		        		{
+		          			animate:{
+		            			type:"flip", 
+		            			subtype:"vertical"
+		          			},
+		          			cells:[
+		            		{
+		              			id:"paso1",
+		              			select:true,
+		              			minHeight: 800,
+		              			rows: [
+		              				{
+		              					view: "textarea",
+		              					width: screen.width - (screen.width*0.05), 
+		              					height: 35,
+		              					value: "En primer lugar hay que acceder a la opción 'Ajustes' del teléfono."
+		              				}, 
+		              				{
+		              					cols: [
+		              						{
+		              							view: "label",
+		              							align: "center",
+		              							height: 65,
+		              							label: "<img src='./step1/ajustes_1.jpg' style='height:50px'>"
+		              						},
+		              						{
+		              							view: "label",
+		              							align: "center",
+		              							label: "<img src='./step1/ajustes_2.jpg' style='height:50px'>"
+		              						},
+		              						{
+		              							view: "label",
+		              							align: "center",
+		              							label: "<img src='./step1/ajustes_3.png' style='height:50px'>"
+		              						}
+		              					]
+		              				}, 
+		              				{
+		              					
+		              					view: "textarea",
+		              					height: 35,
+		              					value: "Selecione la opción 'Seguridad' " 
+		              				},
+		              				{
+              							view: "label",
+              							align: "center",
+              							height: 220,
+              							css: { "margin-bottom": "10px"},
+              							label: "<img src='./step1/seguridad.png'>"
+              						},
+		              				{
+		              					
+		              					view: "textarea",
+		              					height: 60,
+		              					value: "Marque la opción 'Orígenes desconocidos'. De esta manera se podrá descargar e instalar una " +
+		              						"aplicación desde un servidor cualquiera. Como medida de sefuridad, una vez instala la aplicación podemos " + 
+		              						"volver a desmarcarla." 
+		              				}, 
+		              				{
+              							view: "label",
+              							align: "center",
+              							height: 250,
+              							css: { "margin-bottom": "10px"},
+              							label: "<img src='./step1/origen.png'>"
+              						}, 
+		              				{
+		              					view: "button",
+		              					value: "Ir al Paso 2",
+		              					click: "$$('tabbar').setValue('paso2');window.scrollTo(0,0);"
+		              				}
+		              			]
+		            		},
+		            		{
+		              			id:"paso2",
+		              			select:false,
+		              			rows: [
+									{
+										view: "textarea",
+										height: 125,
+										value: "Desde el dispositivo móbil, abra un navegador y escriba la url:\n\n" +
+											window.location.href.replace("index.html", "app.apk") + "\n\n" +
+											"Si esta viendo esta pantalla desde el disposivo móbil pulse el siguiente botón:"
+									},
+									{
+										view: "button",
+										value: "Descargar app",
+										click: "window.open(window.location.href.replace('index.html', 'app.apk'))"
+									},
+									{
+										view: "textarea",
+										height: 125,
+										value: "Una vez finalizada la descarga la aplicación, seleccionar la notificación y confirmar la instalación."
+									},
+		              			]
+							},
+				          	]
+		        		}
+		      		]
+		    	}
+		  ]
+		});
+    	
+		</script>
+    
+    </body>
+</html>

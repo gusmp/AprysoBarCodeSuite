@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    tools:context=".SessionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/session_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apryso_button"
+                android:textColor="@color/textButtonNormalColor"
+                android:onClick="addReadClickHandler"
+                android:drawableStart="@drawable/icon_add_read_white"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="10dp"
+                android:layout_marginBottom="4dp"
+                />
+
+            <Button
+                android:id="@+id/session_substract_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apryso_button"
+                android:textColor="@color/textButtonNormalColor"
+                android:onClick="substractReadClickHandler"
+                android:drawableStart="@drawable/icon_minus_read_white"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:useDefaultMargins="true"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:columnCount="2">
+
+            <TextView
+                android:textColor="@color/textNormalColor"
+                android:text="@string/session_content"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/session_data_textview"
+                android:textColor="@color/textNormalColor"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:textColor="@color/textNormalColor"
+                android:text="@string/session_barcode_type"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/session_barcode_type_textview"
+                android:textColor="@color/textNormalColor"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:textColor="@color/textNormalColor"
+                android:textSize="25dp"
+                android:text="@string/session_read_number"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/session_read_number_textview"
+                android:textColor="@color/textNormalColor"
+                android:textSize="25dp"
+                android:layout_gravity="left"
+                />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/session_save_and_finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apryso_button"
+            android:textColor="@color/textButtonNormalColor"
+            android:layout_marginRight="4dp"
+            android:padding="@dimen/session_button_padding"
+            android:text="@string/session_save_and_finish"
+            android:onClick="saveAndFinishClickHandler"
+            />
+
+        <Button
+            android:id="@+id/session_save_and_continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apryso_button"
+            android:textColor="@color/textButtonNormalColor"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="@dimen/session_button_padding"
+            android:text="@string/session_save_and_continue"
+            android:onClick="saveAndContinueClickHandler"
+            />
+
+        <Button
+            android:id="@+id/session_cancel_and_finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apryso_button"
+            android:textColor="@color/textButtonNormalColor"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="@dimen/session_button_padding"
+            android:text="@string/session_cancel_and_finish"
+            android:onClick="cancelAndFinishClickHandler"
+            />
+
+        <Button
+            android:id="@+id/session_cancel_and_continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apryso_button"
+            android:textColor="@color/textButtonNormalColor"
+            android:layout_marginLeft="4dp"
+            android:padding="@dimen/session_button_padding"
+            android:text="@string/session_cancel_and_continue"
+            android:onClick="cancelAndContinueClickHandler"
+            />
+
+
+    </GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- main activity -->
+    <dimen name="main_button_padding">8dp</dimen>
+    <dimen name="main_space_width">4dp</dimen>
+
+    <!-- about activity -->
+
+    <!-- config activity -->
+
+    <!-- session activity -->
+    <dimen name="session_button_padding">8dp</dimen>
+
+    <!-- others -->
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

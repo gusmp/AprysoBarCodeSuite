@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "590675578975",
+    "firebase_url": "https://aprysobarcodereader.firebaseio.com",
+    "project_id": "aprysobarcodereader",
+    "storage_bucket": "aprysobarcodereader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590675578975:android:8c3e935b594e5b34",
+        "android_client_info": {
+          "package_name": "es.apryso.aprysobarcodereader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590675578975-jrg8eg4f8f5ejnjch7oem7k1ab7jsodn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIpQOR3_tL8VpEKIo-z_eWCbJ1XHpclHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

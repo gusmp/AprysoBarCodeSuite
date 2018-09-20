@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Apryso CodeBar Reader</string>
+
+    <!-- main activity -->
+    <string name="main_init_session_caption">Iniciar sesión</string>
+    <string name="main_session_manager_caption">Administrar\nsesiones</string>
+    <string name="main_config_caption">Configuración</string>
+    <string name="main_about_caption">Acerca de...</string>
+
+    <!-- about activity -->
+    <string name="about_company_name">Asesoría de Proyectos y Soluciones S.L. (APRYSO)</string>
+    <string name="about_street">Calle San Serapio num. 2, oficina 10</string>
+    <string name="about_region">28026 Madrid - España</string>
+    <string name="about_telf">Telf: 91 292 77 29</string>
+    <string name="about_fax">Fax: 91 292 77 28</string>
+    <string name="about_mail">info@apryso.es</string>
+    <string name="about_web">http://www.apryso.es</string>
+
+    <!-- config activity -->
+    <string name="config_server_name">Nombre del servidor:</string>
+    <string name="config_server_name_hint">Nombre del servidor o ip</string>
+
+    <string name="config_server_port">Puerto del servidor:</string>
+    <string name="config_server_port_hint">Puerto</string>
+
+    <string name="config_barcode_library">Libreria:</string>
+    <string name="config_barcode_library_on">Zxing</string>
+    <string name="config_barcode_library_off">Firebase</string>
+
+    <string name="config_zxing_description"><b>Opción recomendada.</b> A parte de reconocer los formatos mas extendidos es más rápida que Firebase</string>
+    <string name="config_firebase_description"><b>Solo reconoce códigos QR.</b> Dado que la detección se basa en una foto, la detección es más lenta</string>
+
+    <string name="config_send_mode">Enviar lecturas al finalizar sesión:</string>
+    <string name="config_send_on">Enviar</string>
+    <string name="config_send_off">No enviar</string>
+
+    <string name="config_save">Guardar</string>
+    <string name="config_back">Volver</string>
+    <string name="config_validation">Validando...</string>
+
+    <string name="config_error_server_name">El nombre del servidor no puede ser vacio ni tener una longitud inferior a 4 si se selecciona el envío de lecturas</string>
+    <string name="config_error_server_port">Si se selecciona el envío de lecturas, se ha de indicar el puerto</string>
+    <string name="config_error_server_port_length">Si se selecciona el envío de lecturas, el puerto debe ser un número entre 2 y 5 dígitos</string>
+    <string name="config_error_server_port_value">El número de puerto no puede ser un valor superior a 65536</string>
+    <string name="config_error_server_no_connectivity">No se ha podido conectar con el servidor. Revise que los datos son correctos, que el servidor está activo y que se puede acceder al servidor desde el dispostivo (por ejemplo con el navegador)</string>
+
+    <!-- session activity -->
+    <string name="session_content">Contenido:</string>
+    <string name="session_barcode_type">Tipo:</string>
+    <string name="session_read_number">Número de lecturas:</string>
+
+    <string name="session_save_and_finish">Guardar\n y acabar</string>
+    <string name="session_save_and_continue">Guardar\n y continuar</string>
+    <string name="session_cancel_and_finish">Cancelar\n y finalizar</string>
+    <string name="session_cancel_and_continue">Cancelar\n y continuar</string>
+
+    <string name="session_barcode_read_label">Realice la lectura del código de barras o pulse el botón atrás para cancelar</string>
+    <string name="session_without_read">No se ha producido ninguna lectura</string>
+    <string name="session_no_back_button">Use alguno de los botones para salir de la sesión</string>
+
+    <string name="session_firebase_unknown_barcode_format">Desconocido</string>
+
+    <string name="session_sending">Enviando datos...</string>
+    <string name="session_error_sending">No se pudo enviar las lecturas al servidor.Revise que el servidor esté arrancado y vuelva a intentarlo desde la opción Administrar Sesiones</string>
+
+    <!-- session manager activity -->
+    <string name="session_manager_caption">Administrar sesiones</string>
+
+    <string name="session_manager_no_sessions">No hay ninguna sessión. Seleccione la opción Iniciar Sesión para crear una.</string>
+    
+    <string name="session_manager_group_session_name">Fecha de la sesión: </string>
+    <string name="session_manager_group_number_reads">Número de lecturas: </string>
+    <string name="session_manager_group_send">Enviar</string>
+    <string name="session_manager_group_sending">Enviando...</string>
+    <string name="session_manager_group_delete">Eliminar</string>
+
+    <string name="session_manager_entry_content">Contenido: </string>
+    <string name="session_manager_entry_barcode_format">Formato: </string>
+    <string name="session_manager_entry_reads">Lecturas: </string>
+    <string name="session_manager_entry_date">Fecha: </string>
+    <string name="session_manager_entry_delete">Eliminar</string>
+    <string name="session_manager_entry_add">+</string>
+    <string name="session_manager_entry_subtract">-</string>
+
+    <string name="session_manager_group_delete_msg">Sessión eliminada</string>
+    <string name="session_manager_entry_delete_msg">Entrada eliminada</string>
+    <string name="session_manager_entry_low_reads">Si desea eliminar la entrada pulse el botón Eliminar</string>
+
+    <string name="session_manager_eror_sending">No se pudo eniar toda la sesión al servidor. Revise que el servidor esté operativo y vuelva a intentarlo</string>
+
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".ConfigActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textNormalColor"
+                android:text="@string/config_server_name"
+                android:layout_weight="0.50"
+                />
+
+            <EditText
+                android:id="@+id/config_server_name_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textNormalColor"
+                android:hint="@string/config_server_name_hint"
+                android:inputType="text"
+                android:layout_weight="0.50"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textNormalColor"
+                android:text="@string/config_server_port"
+                android:layout_weight="0.50"
+                />
+
+            <EditText
+                android:id="@+id/config_server_port_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textNormalColor"
+                android:hint="@string/config_server_port_hint"
+                android:inputType="number"
+                android:layout_weight="0.50"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textNormalColor"
+                android:text="@string/config_barcode_library"
+                android:layout_weight="0.50"
+                />
+
+            <Switch
+                android:id="@+id/config_barcode_library_switch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOn="@string/config_barcode_library_on"
+                android:textOff="@string/config_barcode_library_off"
+                android:onClick="barcodeLibrarySwClickHandler"
+                android:layout_weight="0.50"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/config_barcode_library_info_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textNormalColor"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textNormalColor"
+                android:text="@string/config_send_mode"
+                android:layout_weight="0.50"
+                />
+
+            <Switch
+                android:id="@+id/config_send_mode_switch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOn="@string/config_send_on"
+                android:textOff="@string/config_send_off"
+                android:layout_weight="0.50"
+                />
+
+        </LinearLayout>
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2">
+
+            <Button
+                android:id="@+id/config_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apryso_button"
+                android:textColor="@color/textButtonNormalColor"
+                android:layout_marginRight="4dp"
+                android:text="@string/config_save"
+                android:onClick="saveBtClickHandler"
+                />
+
+            <Button
+                android:id="@+id/config_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apryso_button"
+                android:textColor="@color/textButtonNormalColor"
+                android:layout_marginLeft="4dp"
+                android:text="@string/config_back"
+                android:onClick="backBtClickHandler"
+                />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
+
